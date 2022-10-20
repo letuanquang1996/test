@@ -4,21 +4,17 @@ var myMargin = doc.pages[0].marginPreferences.top;
 var pagesize = doc.documentPreferences; 
 var height = pagesize.pageHeight; 
 var width = pagesize.pageWidth;
-
 var x0=doc.selection[0].geometricBounds[0];
 var x1=doc.selection[0].geometricBounds[1];
 var x2=doc.selection[0].geometricBounds[2];
 var x3=doc.selection[0].geometricBounds[3];
-
 doc.selection[0].fillColor = "None"
 doc.selection[0].parentStory.fillColor = "Black"
 doc.selection[0].geometricBounds =[x0,x1,x2+50,width/2-myMargin-2.5+x1]
 doc.selection[0].parentStory.justification = Justification.CENTER_ALIGN
 doc.selection[0].contents = doc.selection[0].contents.toUpperCase()
 doc.selection[0].parentStory.capitalization=Capitalization.ALL_CAPS
-
 nothings()
-
 if(doc.selection[0].contents.search(/KORTING/g)!==-1){
     breakline(({findWhat:"(KORTING)(\\s)"}),({changeTo:"$1\\r"}))
 }
