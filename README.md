@@ -1,3 +1,3 @@
 # test
-var doc = app.activeDocument
+var doc = app.activeDocument;
 doc.textFrames.add()
