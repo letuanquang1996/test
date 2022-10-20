@@ -1,4 +1,4 @@
-# test
+
 var doc = app.activeDocument
 var myMargin = doc.pages[0].marginPreferences.top; 
 var pagesize = doc.documentPreferences; 
