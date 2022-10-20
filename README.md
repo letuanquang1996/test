@@ -1,2 +1,2 @@
 # test
-alert('quang')
+alert('anh chau')
