@@ -1,2 +1,3 @@
 # test
-alert('wuan tuan le')
+var doc = app.activeDocument
+doc.textFrames.add()
